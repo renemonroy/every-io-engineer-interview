@@ -1,5 +1,39 @@
 ![Storybook Screenshot 1](https://github.com/renemonroy/every-io-engineer-interview/blob/main/screenshot.png?raw=true)
 
+## Overview
+
+The project is organized inside a monorepo. There are 2 main folders: `libs/` and `apps/`. The main project is inside `apps/engineer-interview` and depends on `libs/ui-web-library`.
+
+All components exist mainly at the UI Web Library folder and the project is ready to add tests and stories for Storybook. Given the amount of time I have at the moment I decided to not add tests or stories yet but they can be added simply and the structure folder of a component would look like this:
+
+```
+- UIButton
+  - UIButton.tsx
+  - UIButton.stories.ts
+  - UIButton.styles.ts
+  - UIButton.test.ts
+  - UIButton.types.ts
+  - UIButton.utils.ts
+```
+
+### Main Stack
+
+The stack is basically as follows:
+
+- Typescript
+- React
+- Styled Components
+- Styled System
+- NX
+
+### Decisions Made
+
+Unfortunetely, I didn't have enough time to work on the challenge to add more things I'd love to show, like stories, tests and a custom store (similar to Redux). But the project focused on the main biggest factors mentioned:
+
+1. Readability.
+2. Organization.
+3. Bugs free.
+
 ## Video Intro
 
 https://www.loom.com/share/3df7fcb5424644638b00724cb178e2ff
