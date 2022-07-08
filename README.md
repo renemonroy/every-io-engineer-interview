@@ -1,5 +1,11 @@
 ![Storybook Screenshot 1](https://github.com/renemonroy/every-io-engineer-interview/blob/main/screenshot.png?raw=true)
 
+## Quick Start
+
+1. yarn install
+2. yarn run start
+3. open your browser to http://localhost:4200/
+
 ## Overview
 
 The project is organized inside a monorepo. There are 2 main folders: `libs/` and `apps/`. The main project is inside `apps/engineer-interview` and depends on `libs/ui-web-library`.
@@ -47,8 +53,6 @@ https://www.loom.com/share/3df7fcb5424644638b00724cb178e2ff
   - [Available Scripts](#available-scripts)
     - [`yarn start`](#yarn-start)
     - [`yarn test`](#yarn-test)
-    - [`yarn build`](#yarn-build)
-    - [`yarn eject`](#yarn-eject)
   - [Learn More](#learn-more)
 
 # Getting Started with the Every.io engineering challenge.
@@ -81,9 +85,3 @@ You will be creating a basic todo list, with the following functionality.
 3. If the list in the in the `Todo` column, the left button should be disabled
 4. If the list is in the `Done` column, the right button should be disabled.
 5. There should be form with a text input below the buttons. When the user submits the form, the text from the text input should be added to a new todo item in the `Todo` column.
-
-## Quick Start
-
-1. yarn install
-2. yarn run start
-3. open your browser to http://localhost:4200/
