@@ -1,0 +1,35 @@
+[
+  {
+    "id": "58814606-fe47-11ec-b939-0242ac120002",
+    "title": "To Do",
+    "todos": [
+      {
+        "id": "f9bc3c7c-fe8f-11ec-b939-0242ac120002",
+        "isDone": false,
+        "title": "Mow the lawn"
+      }
+    ]
+  },
+  {
+    "id": "d7d44c64-fe47-11ec-b939-0242ac120002",
+    "title": "In Progress",
+    "todos": [
+      {
+        "id": "9382075e-fe47-11ec-b939-0242ac120002",
+        "isDone": false,
+        "title": "Pull weeds"
+      }
+    ]
+  },
+  {
+    "id": "db8c3984-fe47-11ec-b939-0242ac120002",
+    "title": "Done",
+    "todos": [
+      {
+        "id": "79e48b04-fe48-11ec-b939-0242ac120002",
+        "isDone": true,
+        "title": "Rake the leaves"
+      }
+    ]
+  }
+]

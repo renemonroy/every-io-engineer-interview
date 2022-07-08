@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "engineer-interview": "apps/engineer-interview",
-    "engineer-interview-e2e": "apps/engineer-interview-e2e"
+    "engineer-interview-e2e": "apps/engineer-interview-e2e",
+    "ui-web-library": "libs/ui-web-library"
   }
 }

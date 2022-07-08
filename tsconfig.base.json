@@ -13,8 +13,11 @@
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "resolveJsonModule": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "every-io@ui-web-library": ["libs/ui-web-library/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
