@@ -1,3 +1,5 @@
+![Storybook Screenshot 1](https://github.com/renemonroy/every-io-engineer-interview/blob/main/screenshot.png?raw=true)
+
 ## Video Intro
 
 https://www.loom.com/share/3df7fcb5424644638b00724cb178e2ff
