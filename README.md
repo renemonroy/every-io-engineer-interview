@@ -1,94 +1,53 @@
+## Video Intro
 
+https://www.loom.com/share/3df7fcb5424644638b00724cb178e2ff
 
-# EveryIoEngineerInterview
+- [Getting Started with the Every.io engineering challenge.](#getting-started-with-the-everyio-engineering-challenge)
+  - [The biggest factor will be your code:](#the-biggest-factor-will-be-your-code)
+  - [Requirements](#requirements)
+  - [Quick Start](#quick-start)
+- [Original CRA README below](#original-cra-readme-below)
+  - [Getting Started with Create React App](#getting-started-with-create-react-app)
+  - [Available Scripts](#available-scripts)
+    - [`yarn start`](#yarn-start)
+    - [`yarn test`](#yarn-test)
+    - [`yarn build`](#yarn-build)
+    - [`yarn eject`](#yarn-eject)
+  - [Learn More](#learn-more)
 
-This project was generated using [Nx](https://nx.dev).
+# Getting Started with the Every.io engineering challenge.
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+Thanks for taking the time to complete the Every.io code challenge. Don't worry, it's not too hard, and please do not spend more than an hour or two. We know you have lots of these to do, and it can be very time consuming. If you feel like adding fancy animations, or getting all hip and fresh with the design, go ahead, but it won't earn you any extra points.
 
-🔎 **Smart, Fast and Extensible Build System**
+## The biggest factor will be your code:
 
-## Adding capabilities to your workspace
+1. How readable, is your code.
+2. How did you organize your components.
+3. Are there any bugs.
 
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
+## Requirements
 
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
+[See the prototype for an example.](https://www.figma.com/proto/kd49ArXbBt0vi1kBSLkmC1/Code-Challenge?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1)
 
-Below are our core plugins:
+You will be creating a basic todo list, with the following functionality.
 
-- [React](https://reactjs.org)
-  - `npm install --save-dev @nrwl/react`
-- Web (no framework frontends)
-  - `npm install --save-dev @nrwl/web`
-- [Angular](https://angular.io)
-  - `npm install --save-dev @nrwl/angular`
-- [Nest](https://nestjs.com)
-  - `npm install --save-dev @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `npm install --save-dev @nrwl/express`
-- [Node](https://nodejs.org)
-  - `npm install --save-dev @nrwl/node`
+1. The list has 3 states. Each represented by a column. Similar to Trello.
+   1. `Todo`
+   2. `In Progress`
+   3. `Done`
+2. Each list item has a right and left arrow button.
+   1. The right arrow moves the list item from:
+      1. `Todo` to `In Progress`
+      2. `In Progress` to `Done`
+   2. The Left arrow moves the list item from
+      1. `Done` to `In Progress`
+      2. `In Progress` to `Todo`
+3. If the list in the in the `Todo` column, the left button should be disabled
+4. If the list is in the `Done` column, the right button should be disabled.
+5. There should be form with a text input below the buttons. When the user submits the form, the text from the text input should be added to a new todo item in the `Todo` column.
 
-There are also many [community plugins](https://nx.dev/community) you could add.
+## Quick Start
 
-## Generate an application
-
-Run `nx g @nrwl/react:app my-app` to generate an application.
-
-> You can use any of the plugins above to generate applications as well.
-
-When using Nx, you can create multiple applications and libraries in the same workspace.
-
-## Generate a library
-
-Run `nx g @nrwl/react:lib my-lib` to generate a library.
-
-> You can also use any of the plugins above to generate libraries as well.
-
-Libraries are shareable across libraries and applications. They can be imported from `@every-io-engineer-interview/mylib`.
-
-## Development server
-
-Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `nx g @nrwl/react:component my-component --project=my-app` to generate a new component.
-
-## Build
-
-Run `nx build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `nx test my-app` to execute the unit tests via [Jest](https://jestjs.io).
-
-Run `nx affected:test` to execute the unit tests affected by a change.
-
-## Running end-to-end tests
-
-Run `nx e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
-
-Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
-
-## Understand your workspace
-
-Run `nx graph` to see a diagram of the dependencies of your projects.
-
-## Further help
-
-Visit the [Nx Documentation](https://nx.dev) to learn more.
-
-
-
-## ☁ Nx Cloud
-
-### Distributed Computation Caching & Distributed Task Execution
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
-
-Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
-
-Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
-
-Visit [Nx Cloud](https://nx.app/) to learn more.
+1. yarn install
+2. yarn run start
+3. open your browser to http://localhost:4200/
