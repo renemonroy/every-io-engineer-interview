@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import UIButton from '../UIButton/UIButton';
 import UIBox from '../UIBox/UIBox';
@@ -22,8 +22,13 @@ import {
  * @parem {JSX.Element} props.children - A React JSX element.
  */
 function UIBoard(props: UIBoardProps): JSX.Element {
-  const [states, setStates] = useState(props.states);
+  const { states: boardStates } = props;
+  const [states, setStates] = useState(boardStates);
   const [newTodoValue, setNewTodoValue] = useState('');
+
+  useEffect(() => {
+    setStates(boardStates);
+  }, [boardStates]);
 
   function moveToPrevious(todo: IBoardTodo, colIndex: number) {
     if (colIndex === 0) return;

@@ -3,7 +3,6 @@ import { LayoutProps, PositionProps } from 'styled-system';
 export interface IBoardTodo {
   id: string;
   title: string;
-  isDone: boolean;
 }
 
 export type IBoardTodos = IBoardTodo[];
