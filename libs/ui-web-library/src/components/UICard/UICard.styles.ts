@@ -9,6 +9,7 @@ export const SUICard = styled.div`
   margin-bottom: 1rem;
   justify-content: space-between;
   padding: 1rem;
+  text-align: center;
   ${flexbox}
 
   &:last-child {
